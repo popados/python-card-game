@@ -12,7 +12,7 @@ Day 2 | 2/3/2022 - Thursday -
 
     - Read some of this - https://docs.python-guide.org/
 
-Day 3 | 2/3/2022 - Friday -
+Day 3 | 2/4/2022 - Friday -
 
 - More reading and changing arithmetic operators into functions
 
@@ -22,3 +22,27 @@ Day 3 | 2/3/2022 - Friday -
         - https://www.geeksforgeeks.org/pangram-checking/
 
     - https://docs.python.org/3/library/string.html
+
+Day 4 | 2/5/2022 - Saturday -
+
+- Forgot to do stuff. Dang, not even a week into coding and I stop for a day.
+
+Day 5 | 2/6/2022 - Sunday -
+
+- Trying to code for the rest of the night and put stuff up on my repo. **I FORGOT AGAIN.**
+
+Day 6 | 2/7/2022 - Monday - 
+
+I fog
+
+
+
+***
+
+- Timer
+
+- Calculators
+
+- Card Game
+
+- 

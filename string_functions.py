@@ -12,7 +12,9 @@
 
 
 def first_name(name) :
-    print("your first name is :",name)
+    
+    print("your first name is :", name)
+    return name
 
 def panagram_check(sentence):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
