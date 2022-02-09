@@ -1,24 +1,56 @@
+
+
+
+
+
 def add_nums(x,y) :
-    print('first number :', x)
-    print('second number :', y)
-    z = int(x) + int(y)
-    print('\nadded: ',z)
+    return int(x) + int(y)
 
 
 def subtract_nums(x,y) :
     # print('first # :', x)
     # print('second number :', y)
-    z = int(x) - int(y)
-    print('\nsubtracted: ',z)
+    return int(x) - int(y)
 
 def divide_nums(x,y) :
     # print('first # :', x)
     # print('second number :', y)
-    z = int(x) / int(y)
-    print('\ndivided: ',z)
+    return int(x) / int(y)
+
+
+# This is good
 
 def multiply_nums(x,y) :
     # print('first # :', x)
     # print('second number :', y)
-    z = int(x) * int(y)
-    print('\nmultiplied: ',z)
+    return int(x) * int(y)
+
+
+
+
+#### this is bad
+
+## def divide_nums(x,y)
+##     z = int(x) / int(y)
+##    print('\ndivided: ',z)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

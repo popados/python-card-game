@@ -33,7 +33,74 @@ Day 5 | 2/6/2022 - Sunday -
 
 Day 6 | 2/7/2022 - Monday - 
 
-I fog
+Put up on github. Added functions for names. 
+
+- https://www.codespeedy.com/how-to-use-a-variable-from-another-function-in-python/
+
+
+- https://realpython.com/python-return-statement/#returning-vs-printing
+
+    - If your function has multiple return statements and returning None is a valid option, then you should consider the explicit use of return None instead of relying on the Python’s default behavior.
+
+
+**BAD PRACTICE :**
+```
+counter = 0
+
+def increment() :
+global counter
+counter +=1
+
+>>>>increment()
+>>>>counter
+>1
+
+```
+**GOOD PRACICE :**
+
+```
+
+counter = 0
+
+def increment(var) :
+return counter +=1
+
+>>> increment(counter)
+> 1
+>>> counter
+> 0
+>>> counter = incrememnt(counter)
+>>> counter
+> 1
+
+
+
+```
+
+***
+
+Day 7 | 2/8/2022 - Tuesday - 
+
+I was reading about variables and objects in python. Cleaned up some of the scripts more.
+
+- https://www.codespeedy.com/how-to-use-a-variable-from-another-function-in-python/
+
+- https://www.guru99.com/python-class-objects-object-oriented-programming-oop-s.html
+
+Looking at work now. Will write more about how I started programming and self learning.
+
+
+
+***
+
+- Objects
+
+- Classes
+
+- Loops
+
+
+
 
 
 

@@ -18,34 +18,38 @@ def ask_name(name) :
 def first_name(self) :
     name = ask_name.name
     print("your first name is :",name)
+    return name
 
 
-# x = input("enter a number \n")
+x = input("enter a number \n")
 
-# y = input ("enter a second number \n")
+y = input ("enter a second number \n")
 
-# z = 0
+z = 0
 
 
 
 ask_name(your_name)
 
-first_name(your_name)
+your_name = first_name(your_name)
+
+print(your_name)
 
 
+arithmetic_operations.add_nums(x, y)
+
+arithmetic_operations.subtract_nums(x,y)
+
+arithmetic_operations.divide_nums(x,y)
+
+z = arithmetic_operations.multiply_nums(x,y)
+
+print(z)
 
 
-# arithmetic_operations.add_nums(x, y)
+#firstname = input('first name?: ')
 
-# arithmetic_operations.subtract_nums(x,y)
-
-# arithmetic_operations.divide_nums(x,y)
-
-# arithmetic_operations.multiply_nums(x,y)
-
-# #firstname = input('first name?: ')
-
-# #string_functions.first_name(firstname)
+#string_functions.first_name(firstname)
 
 # sentence = input("enter a panagram :\n")
 

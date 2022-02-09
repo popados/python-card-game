@@ -11,8 +11,8 @@
 
 
 
-def first_name(name) :
-    
+def first_name(self, name) :
+
     print("your first name is :", name)
     return name
 
