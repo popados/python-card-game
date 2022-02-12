@@ -31,3 +31,15 @@ if (checkPangram(sentence)):
 else:
     print ('"'+sentence+'"')
     print ("is not a pangram")
+
+
+
+
+    
+def panagram_check(sentence):
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+    for char in alphabet :
+        if char not in sentence.lower() :
+            return False
+        return True

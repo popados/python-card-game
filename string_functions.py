@@ -11,16 +11,21 @@
 
 
 
-def first_name(self, name) :
+# def first_name(self, name) :
 
-    print("your first name is :", name)
+#     print("your first name is :", name)
+#     return name
+
+
+def ask_name(name) :
+
+    ask_name.name = ''
+    ask_name.name = input("enter your name: ")
+    return ask_name.name
+
+
+
+def first_name(name) :
+    name = ask_name.name
+    print("your first name is :",name)
     return name
-
-def panagram_check(sentence):
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-
-    for char in alphabet :
-        if char not in sentence.lower() :
-            return False
-        return True
-
