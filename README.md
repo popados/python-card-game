@@ -182,11 +182,50 @@ if __name__== "__main__":
 - [GitMind How-To](https://gitmind.com/faq/how-to-use-gitmind.html?apptype=aps-gg-en&appver=1.0.8.0&ct=1644637728&h=cff101ea9ffe94539c017c16a23a0538&language=en&mt=1644637729&app_id=459&type=install&wxga=GA1.2.1674683154.1644465849#_3-chapter)
 
 -
+
+***
+
+Day 11 | 2/12/2022 - Saturday -
+
+Working on a mind map for my card game. Including images from my spreedsheet I made when I started working on this game. 
+
+
+**Side note :**
+
+Spoiler text. Note that it's important to have a space after the summary tag. You should be able to write any markdown you want inside the `<details>` tag... just make sure you close `<details>` afterward.
+  
+
+````markdown
+<details>
+    <summary>Spoiler warning</summary>
+
+Spoiler text. Note that it's important to have a space after the summary tag. You should be able to write any markdown you want inside the `<details>` tag... just make sure you close `<details>` afterward.
+
+```javascript
+    console.log("I'm a code block!");
+```
+
+</details>
+````  
+
+
 ***
 
 <div id="end-of-doc"></div>
 
 [Jump to Top](#top-of-doc)
+
+
+<details>
+  <summary><b>Card Idea Images</b></summary>
+
+![alt text](images/fire-wind-water-earth.png) {:height=250px}
+
+![alt text](images/light-dark.png)
+
+
+  
+</details>
 
 ***
 

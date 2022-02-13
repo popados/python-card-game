@@ -36,8 +36,8 @@ z = arithmetic_operations.multiply_nums(x,y)
 
 print(z)
 
-goblin = card("monster", "2","3")
-fireball = card("spell", "1", NULL)
+goblin = card("Goblin","monster", "2","3")
+fireball = card("Fireball","spell", "1", NULL)
 
 print("goblin card:")
 goblin.showCard()
