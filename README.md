@@ -8,7 +8,7 @@
 
 ## Kinda more like 100 days of Python
 
-[Jump to End](#end-of-doc)
+ | [Card Ideas](#card-images) | [Jump to End](#end-of-doc)
 
 ***
 
@@ -139,7 +139,11 @@ Nothing again.
 
 Day 10 | 2/11/2022 - Friday -
 
-Read some articles included above(starting to move those articles around). Learning how classes and functions work. 
+Read some articles included above(starting to move those articles around). Learning how classes and functions work. Found out python does not have a built in function to call the "name" of an object. This is because the variable for an object can change at a given time and present bugs. There are work arounds. 
+
+- https://stackoverflow.com/questions/12189000/how-to-write-a-function-to-return-the-variable-name
+
+- https://stackoverflow.com/questions/8875202/can-an-object-inspect-the-name-of-the-variable-its-been-assigned-to/8875313#8875313
 
 **NOTE: About using “self” in Python**
 
@@ -187,7 +191,13 @@ if __name__== "__main__":
 
 Day 11 | 2/12/2022 - Saturday -
 
-Working on a mind map for my card game. Including images from my spreedsheet I made when I started working on this game. 
+Working on a mind map for my card game. Including images from my spreedsheet I made when I started working on this game.
+
+Changed the structure of my python scripts. Added images, and basic scripts folders.
+
+- https://docs.python.org/3/reference/import.html
+
+Added images for : [Card Ideas](#card-images)
 
 
 **Side note :**
@@ -213,8 +223,9 @@ Spoiler text. Note that it's important to have a space after the summary tag. Yo
 
 <div id="end-of-doc"></div>
 
-[Jump to Top](#top-of-doc)
 
+
+<div id="card-images"></div>
 
 <details>
   <summary><b>Card Idea Images</b></summary>
@@ -250,3 +261,5 @@ Spoiler text. Note that it's important to have a space after the summary tag. Yo
 - Card Game
 
 - 
+
+[Jump to Top](#top-of-doc)
