@@ -232,7 +232,7 @@ Worked on getting global variables working. It was weird had to use stack overfl
 
 
 ```
-//correct usage
+///  correct usage
 //
 /
 
@@ -245,8 +245,8 @@ def dealDamage():
 
 
 
-//function below has the big mistake (didnt say var = var - 1)
-//
+/// incorrect usage
+//  big mistake (didnt say var = var - 1)
 /
 
 def loseHitpoint():
