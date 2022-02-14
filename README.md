@@ -8,7 +8,7 @@
 
 ## Kinda more like 100 days of Python
 
- | [Card Ideas](#card-images) | [Jump to End](#end-of-doc)
+[About Modules](https://stackoverflow.com/questions/714063/importing-modules-from-parent-folder) | [Card Ideas](#card-images) | [Jump to End](#end-of-doc) 
 
 ***
 
@@ -218,6 +218,44 @@ Spoiler text. Note that it's important to have a space after the summary tag. Yo
 </details>
 ````  
 
+***
+
+Day 12 | 2/13/2022 - Sunday -
+
+Worked on getting global variables working. It was weird had to use stack overflow. I learned about scope in Python.
+
+- https://stackoverflow.com/questions/10506973/can-not-increment-global-variable-from-function-in-python
+
+- https://stackoverflow.com/questions/10588317/python-function-global-variables
+
+- [not what i was looking for but useful info about classes](https://careerkarma.com/blog/python-missing-required-positional-argument-self/)
+
+
+```
+//correct usage
+//
+/
+
+health = 20 # set variable
+
+def dealDamage():
+    global health # call using global keyword
+    health = health - 1 
+    print("damage to global health var :", health)
+
+
+
+//function below has the big mistake (didnt say var = var - 1)
+//
+/
+
+def loseHitpoint():
+    global hitpoints
+    hitpoints - 1
+    print("damage to global hitpoints var :", hitpoints)
+
+
+```
 
 ***
 
