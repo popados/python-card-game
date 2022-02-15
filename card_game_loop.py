@@ -33,6 +33,8 @@ def loseHitpoints():
     print("damage to global hitpoints var:", hitpoints)
 
 
+# THIS IS MY MAIN LOGIC I GUESS(?)
+
 if (int(health) >= int(hitpoints)):
     commanderAlive = True
 

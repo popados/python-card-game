@@ -230,6 +230,90 @@ Worked on getting global variables working. It was weird had to use stack overfl
 
 - [not what i was looking for but useful info about classes](https://careerkarma.com/blog/python-missing-required-positional-argument-self/)
 
+***
+Day 13 | 2/14/2022 - Monday -
+
+Working with loops. Conditional statements and beginning to flesh out the card game system.
+
+Major concepts for what I want done :
+
+- Loops
+
+- Conditional statements
+
+- Input/Output
+
+- Objects(??) 
+
+    - Not sure if I mean design patterns or what yet.
+
+~~Making a GitMind map.[ ]~~ | ~~Made a FreeMind map[ ]~~ | Made a lucid chart flowchart [ x ]
+
+
+Should probably get to my cover letter. Might put something in this doc to explain work gap, experience, and what I hope to gain by working.
+
+***
+
+Day 14 | 2/15/2022 - Tuesday -
+
+
+***
+
+<div id="end-of-doc"></div>
+
+
+
+<div id="card-images"></div>
+
+<details>
+  <summary><b>Card Idea Images</b></summary>
+
+![fire-water-wind-earth](images/fire-wind-water-earth.png)
+
+![light-dark](images/light-dark.png)
+
+
+  
+</details>
+
+***
+
+- Objects
+
+    - https://www.guru99.com/python-class-objects-object-oriented-programming-oop-s.html
+
+- Classes
+
+    - https://www.geeksforgeeks.org/self-in-python-class/#:~:text=self%20represents%20the%20instance%20of,to%20refer%20to%20instance%20attributes.
+
+
+- Loops
+
+    -  https://www.openbookproject.net/books/bpp4awd/ch04.html
+
+
+***
+
+- Timer
+
+- Calculators
+
+- Card Game
+
+
+***
+
+**TODO LIST :**
+
+***
+
+[Jump to Top](#top-of-doc)
+
+***
+
+**CODE BLOCKS & NOTES :**
+
+***
 
 ```
 ///  correct usage
@@ -258,46 +342,3 @@ def loseHitpoint():
 ```
 
 ***
-
-<div id="end-of-doc"></div>
-
-
-
-<div id="card-images"></div>
-
-<details>
-  <summary><b>Card Idea Images</b></summary>
-
-![alt text](images/fire-wind-water-earth.png) {:height=250px}
-
-![alt text](images/light-dark.png)
-
-
-  
-</details>
-
-***
-
-- Objects
-
-    - https://www.guru99.com/python-class-objects-object-oriented-programming-oop-s.html
-
-- Classes
-
-    - https://www.geeksforgeeks.org/self-in-python-class/#:~:text=self%20represents%20the%20instance%20of,to%20refer%20to%20instance%20attributes.
-
-
-- Loops
-
-
-***
-
-- Timer
-
-- Calculators
-
-- Card Game
-
-- 
-
-[Jump to Top](#top-of-doc)
