@@ -256,6 +256,58 @@ Should probably get to my cover letter. Might put something in this doc to expla
 
 Day 14 | 2/15/2022 - Tuesday -
 
+**Plan :**
+
+- Basic Statistics
+
+    - algos
+
+    - types of equations
+
+- Card Game
+
+    - https://www.programiz.com/article/flowchart-programming
+
+    - https://lucid.app/documents#/documents?folder_id=home
+
+***
+
+Day 15 | 2/16/2022 - Wednesday - 
+
+
+Nothing much just reading and looking at websites.
+
+- https://www.freecodecamp.org/news/your-developer-career-questions-answered/
+
+***
+
+Day 16 | 2/17/2022 - Thursday - 
+
+Just realized I'm running into some scope issues. I need to figure out how to have my card do damage. Right now the function works in the scope of one file. My current appraoch is that I will create multiple objects and have them reference each other.
+
+Does not have the scope to attack a commander object health.
+
+- https://stackoverflow.com/questions/21169097/how-to-change-the-scope-of-a-variable-in-a-function-python
+
+- https://stackoverflow.com/questions/18884782/typeerror-worker-takes-0-positional-arguments-but-1-was-given
+
+- https://www.w3schools.com/python/python_functions.asp
+
+- https://scipy-lectures.org/intro/language/functions.html#global-variables
+
+```
+
+def loseHitpoints():
+    global hitpoints
+    hitpoints = hitpoints - 1
+    print("same")
+    print("damage to global hitpoints var:", hitpoints)
+
+
+```
+
+
+
 
 ***
 
