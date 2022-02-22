@@ -306,10 +306,18 @@ def loseHitpoints():
 
 ```
 
+***
 
+Day 17 | 2/18/2022 - Friday - 
 
 
 ***
+
+ay 18 | 2/19/2022 - Saturday - 
+
+***
+
+ay 19 | 2/20/2022 - Sunday - 
 
 <div id="end-of-doc"></div>
 
