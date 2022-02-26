@@ -313,11 +313,37 @@ Day 17 | 2/18/2022 - Friday -
 
 ***
 
-ay 18 | 2/19/2022 - Saturday - 
+Day 18 | 2/19/2022 - Saturday - 
 
 ***
 
-ay 19 | 2/20/2022 - Sunday - 
+Day 19 | 2/20/2022 - Sunday -
+
+***
+
+Day 20 | 2/21/2022 - Monday - 
+
+***
+
+Day 21 | 2/22/2022 - Tuesday -
+
+***
+
+Day 22 | 2/23/2022 - Wednesday -
+
+***
+
+Day 23 | 2/24/2022 - Thursday -
+
+
+***
+
+Day 24 | 2/25/2022 - Friday -
+
+***
+
+Day 25 | 2/26/2022 - Saturday -
+
 
 <div id="end-of-doc"></div>
 
