@@ -15,6 +15,15 @@ class card () :
         print("Attack is", self.attack)
         print("Health is", self.health)
 
+    def loseHitpoints(self, hitpoints, damage):
+        damage = damage
+        hitpoints = hitpoints - damage
+        print("from card object")
+        print("damage to global hitpoints var:", damage)
+        print(hitpoints)
+        return (hitpoints)
+
+
 #Doesnt work    
 #    def cardName(self) :
 #        print("card name is", )

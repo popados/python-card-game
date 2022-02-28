@@ -340,6 +340,12 @@ Day 23 | 2/24/2022 - Thursday -
 
 Day 24 | 2/25/2022 - Friday -
 
+Looking at objects and scope. 
+
+- https://www.geeksforgeeks.org/namespaces-and-scope-in-python/
+
+- https://stackoverflow.com/questions/26330886/how-to-manipulate-individual-object-instance-variables
+
 ***
 
 Day 25 | 2/26/2022 - Saturday -
