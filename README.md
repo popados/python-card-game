@@ -8,6 +8,9 @@
 
 ## Kinda more like 100 days of Python
 
+
+### ***HEADSUP I STOPPED THIS***
+
 [About Modules](https://stackoverflow.com/questions/714063/importing-modules-from-parent-folder) | [Card Ideas](#card-images) | [Jump to End](#end-of-doc) 
 
 ***
@@ -348,8 +351,16 @@ Looking at objects and scope.
 
 ***
 
-Day 25 | 2/26/2022 - Saturday -
+Days 25 to 28 | 2/26/2022 to 3/1/2022 -
 
+I haven't been able to code. Both a mental block and using my time correctly.
+
+***
+
+### Day something | 3/10/2022 - Thursday -
+
+
+I'm trying to code again. Might have to switch languages.
 
 <div id="end-of-doc"></div>
 
