@@ -8,6 +8,9 @@ class card () :
         self.type = type
         self.attack = attack
         self.health = health
+        self.isSpell = False
+        self.isCreature = False
+        self.isCastable = True
 
     def showCard(self) :
         print("Name is", self.name)

@@ -29,9 +29,9 @@ def varSubtract(var):
     return int(var) - int(damage)
 
 def dealDamage():
-    global health
-    health = health - 1
-    print("damage to global health var :", health)
+    global totalhealth
+    totalhealth = totalhealth - 1
+    print("damage to global health var :", totalhealth)
 
 # def loseHitpoints( health , damage):
 #     #global hitpoints
@@ -59,6 +59,13 @@ if (totalhealth >= hitpoints):
 else :
 
     print("i got here")
+
+
+while totalhealth > 0:
+    dealDamage()
+    print(totalhealth)
+    
+
 
 # if (int(health) >= int(hitpoints)):
 #     commanderAlive = True
