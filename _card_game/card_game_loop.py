@@ -16,11 +16,11 @@ commanderAlive = False
 
 damage = 1
 
-global hitpoints
+#global hitpoints
 
 hitpoints = playerOne.health
 print("your hp is:", hitpoints)
-totalhealth = int(20)
+#totalhealth = int(20)
 
 # Put into new object called Avatar or Commander
 # 
@@ -29,8 +29,10 @@ def varSubtract(var):
     return int(var) - int(damage)
 
 def dealDamage():
-    global totalhealth
-    totalhealth = totalhealth - 1
+    #global totalhealth
+    totalhealth = playerOne.health
+    totalhealth - 1
+    #loseHitpoints(damage)
     print("damage to global health var :", totalhealth)
 
 # def loseHitpoints( health , damage):
@@ -41,29 +43,48 @@ def dealDamage():
 #     print("damage to global hitpoints var:", damage)
 
 
-def loseHitpoints(damage) :
+def loseHitpoints(player, damage) :
     global hitpoints
+    hitpoints = playerOne.health
     hitpoints = hitpoints - damage
     print("you did:", damage)
+    print(playerOne.health)
+    return hitpoints
 
-# THIS IS MY MAIN LOGIC I GUESS(?)
 
-if (totalhealth >= hitpoints):
+
+
+# THIS IS MY MAIN LOGIC I GUE~SS(?)
+
+# if (totalhealth >= hitpoints):
     
-    print("health is greater than or equal to hitpoints")
-    #fireball.loseHitpoints(damage)
-    fireball.loseHitpoints(hitpoints, fireball.attack )
-    print("your hp is:", hitpoints)
+#     print("health is greater than or equal to hitpoints")
+#     #fireball.loseHitpoints(damage)
+#     fireball.loseHitpoints(hitpoints, fireball.attack )
+#     print("your hp is:", hitpoints)
 
 
-else :
+# else :
 
-    print("i got here")
+#     print("i got here")
+
+# START GAME
 
 
-while totalhealth > 0:
-    dealDamage()
-    print(totalhealth)
+
+
+#game loop
+while playerOne.health > 0:
+    #dealDamage()
+    #function does not return health correctly
+    loseHitpoints(playerOne.health, fireball.attack)
+    playerOne.health -= 1
+    print(playerOne.health)
+
+
+    #player 1 turn
+    #PLAYER 2 turn
+    
     
 
 
