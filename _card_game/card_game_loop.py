@@ -3,9 +3,9 @@ from commander_object import commander
 
 goblin = card("goblin", "monster", 3, 1)
 
-fireball = card("fireball", "spell", int(2), 0)
+fireball = card("fireball", "spell", int(2), int(1))
 
-playerOne = commander("player one", int(5), int(20))
+
 
 #goblin.showCard()
 # global hitpoints
@@ -14,19 +14,19 @@ playerOne = commander("player one", int(5), int(20))
 
 commanderAlive = False
 
-damage = 1
+# damage = 1
 
 #global hitpoints
 
-hitpoints = playerOne.health
-print("your hp is:", hitpoints)
+# hitpoints = playerOne.health
+# print("your hp is:", hitpoints)
 #totalhealth = int(20)
 
 # Put into new object called Avatar or Commander
 # 
 
 def varSubtract(var):
-    return int(var) - int(damage)
+    return int(var) - int(1)
 
 def dealDamage():
     #global totalhealth
@@ -41,17 +41,32 @@ def dealDamage():
 #     health = health - damage
 #     print("same")
 #     print("damage to global hitpoints var:", damage)
+global playerOne
+playerOne = commander("player one", int(5), int(20))
+global hitpoints
 
 
-def loseHitpoints(player, damage) :
-    global hitpoints
-    hitpoints = playerOne.health
-    hitpoints = hitpoints - damage
+def loseHitpoints(player: commander, damage:card) :
+    # health = player.health
+    health = player.health
+    damage = damage.attack
+    player.health -= damage
     print("you did:", damage)
-    print(playerOne.health)
-    return hitpoints
+    print(player.health)
+    return health
 
 
+
+
+# while True:
+while playerOne.health > 0:
+    #dealDamage()
+    #function does not return health correctly
+    loseHitpoints(playerOne, fireball)
+    if playerOne.health < 0:
+        break
+    # playerOne.health -= 1
+    # print(playerOne.health)
 
 
 # THIS IS MY MAIN LOGIC I GUE~SS(?)
@@ -74,12 +89,6 @@ def loseHitpoints(player, damage) :
 
 
 #game loop
-while playerOne.health > 0:
-    #dealDamage()
-    #function does not return health correctly
-    loseHitpoints(playerOne.health, fireball.attack)
-    playerOne.health -= 1
-    print(playerOne.health)
 
 
     #player 1 turn
