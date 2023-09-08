@@ -1,5 +1,6 @@
 
-
+# from card_object import card
+# from commander_object import commander
 
 class card () :
 
@@ -18,13 +19,14 @@ class card () :
         print("Attack is", self.attack)
         print("Health is", self.health)
 
-    def loseHitpoints(self, hitpoints, damage):
-        damage = damage
-        hitpoints = hitpoints - damage
-        print("from card object")
-        print("damage to global hitpoints var:", damage)
-        print(hitpoints)
-        return (hitpoints)
+    def loseHitpoints(player, damage) :
+        # health = player.health
+        health = player.health
+        damage = damage.attack
+        player.health -= damage
+        print("you did:", damage)
+        print(player.health)
+        return health
 
 
 #Doesnt work    

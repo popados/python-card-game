@@ -5,6 +5,7 @@ goblin = card("goblin", "monster", 3, 1)
 
 fireball = card("fireball", "spell", int(2), int(1))
 
+playerOne = commander("player one", int(5), int(20))
 
 
 #goblin.showCard()
@@ -35,25 +36,33 @@ def dealDamage():
     #loseHitpoints(damage)
     print("damage to global health var :", totalhealth)
 
+
+def playerOneTurn():
+    print()
+    print("player one turn")
+    print("Press Enter to End Turn")
+    input()
+
+
 # def loseHitpoints( health , damage):
 #     #global hitpoints
 
 #     health = health - damage
 #     print("same")
 #     print("damage to global hitpoints var:", damage)
-global playerOne
-playerOne = commander("player one", int(5), int(20))
-global hitpoints
+# global playerOne
+# global hitpoints
 
 
-def loseHitpoints(player: commander, damage:card) :
-    # health = player.health
-    health = player.health
-    damage = damage.attack
-    player.health -= damage
-    print("you did:", damage)
-    print(player.health)
-    return health
+#the overload is the key here 
+# def loseHitpoints(player: commander, damage:card) :
+#     # health = player.health
+#     health = player.health
+#     damage = damage.attack
+#     player.health -= damage
+#     print("you did:", damage)
+#     print(player.health)
+#     return health
 
 
 
@@ -62,7 +71,9 @@ def loseHitpoints(player: commander, damage:card) :
 while playerOne.health > 0:
     #dealDamage()
     #function does not return health correctly
-    loseHitpoints(playerOne, fireball)
+    #works now  
+    playerOneTurn()
+    playerOne.loseHitpoints(playerOne, fireball)
     if playerOne.health < 0:
         break
     # playerOne.health -= 1
