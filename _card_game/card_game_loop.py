@@ -8,23 +8,8 @@ fireball = card("fireball", "spell", int(2), int(1))
 playerOne = commander("player one", int(5), int(20))
 
 
-#goblin.showCard()
-# global hitpoints
-# global health
-# global damage
+commanderAlive = True
 
-commanderAlive = False
-
-# damage = 1
-
-#global hitpoints
-
-# hitpoints = playerOne.health
-# print("your hp is:", hitpoints)
-#totalhealth = int(20)
-
-# Put into new object called Avatar or Commander
-# 
 
 def varSubtract(var):
     return int(var) - int(1)
@@ -37,11 +22,49 @@ def dealDamage():
     print("damage to global health var :", totalhealth)
 
 
-def playerOneTurn():
+def playerOneTurn(commander: playerOne):
     print()
     print("player one turn")
+    playerOne.loseHitpoints(playerOne, fireball)
     print("Press Enter to End Turn")
     input()
+
+def turnCounter():
+
+    if commanderAlive == True:
+            
+        while playerOne.health > 0:
+            #dealDamage()
+            #function does not return health correctly
+            #works now  
+            playerOneTurn(playerOne)
+
+            if playerOne.health < 0:
+                commanderAlive == False
+                break
+            # playerOne.health -= 1
+            # print(playerOne.health)
+
+turnCounter()
+print("end of program")
+
+#goblin.showCard()
+# global hitpoints
+# global health
+# global damage
+
+
+# damage = 1
+
+#global hitpoints
+
+# hitpoints = playerOne.health
+# print("your hp is:", hitpoints)
+#totalhealth = int(20)
+
+# Put into new object called Avatar or Commander
+# 
+
 
 
 # def loseHitpoints( health , damage):
@@ -68,16 +91,7 @@ def playerOneTurn():
 
 
 # while True:
-while playerOne.health > 0:
-    #dealDamage()
-    #function does not return health correctly
-    #works now  
-    playerOneTurn()
-    playerOne.loseHitpoints(playerOne, fireball)
-    if playerOne.health < 0:
-        break
-    # playerOne.health -= 1
-    # print(playerOne.health)
+
 
 
 # THIS IS MY MAIN LOGIC I GUE~SS(?)
@@ -116,8 +130,6 @@ while playerOne.health > 0:
 #         fireball.loseHitpoints(hitpoints)
 #         if int(hitpoints <= 0 ) : 
 #             commanderAlive = False
-
-print("end of program")
 
 
 
