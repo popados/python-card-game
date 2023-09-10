@@ -7,6 +7,8 @@ fireball = card("fireball", "spell", int(2), int(1))
 
 playerOne = commander("player one", int(5), int(20), 0)
 
+playerTwo = commander("player two", int(5), int(20), 0)
+
 
 
 commanderAlive = True
@@ -35,18 +37,33 @@ def playerOneTurn(commander: playerOne):
     print("Press Enter to End Turn")
     input()
 
+
+def playerTwoTurn(commander: playerTwo):
+    print()
+    counter = playerTwo.count
+
+
+    # # counter = count
+    print("player two turn " + str(counter))
+    playerOne.loseHitpoints(playerTwo, fireball)
+    print()
+    print("Press Enter to End Turn")
+    input()
+
 def turnCounter():
 
     if commanderAlive == True:
             
-        while playerOne.health > 0:
+        while commanderAlive == True:
             #dealDamage()
             #function does not return health correctly
             #works now  
             playerOne.count += 1
             playerOneTurn(playerOne)
+            playerTwo.count += 1
+            playerTwoTurn(playerTwo)
             # playerOne.count + 1
-            if playerOne.health < 0:
+            if (playerOne.health <= 0 | playerTwo.health <=0):
                 commanderAlive == False
                 break
             # playerOne.health -= 1
