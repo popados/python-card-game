@@ -8,10 +8,11 @@
 
 class commander ():
 
-    def __init__ (self, name, attack, health) :
+    def __init__ (self, name, attack, health, count) :
         self.name = name
         self.attack = attack
         self.health = health
+        self.count = count
 
     # def loseHitpoints(hitpoints):
     #     #global hitpoints

@@ -5,7 +5,8 @@ goblin = card("goblin", "monster", 3, 1)
 
 fireball = card("fireball", "spell", int(2), int(1))
 
-playerOne = commander("player one", int(5), int(20))
+playerOne = commander("player one", int(5), int(20), 0)
+
 
 
 commanderAlive = True
@@ -24,8 +25,13 @@ def dealDamage():
 
 def playerOneTurn(commander: playerOne):
     print()
-    print("player one turn")
+    counter = playerOne.count
+
+
+    # # counter = count
+    print("player one turn " + str(counter))
     playerOne.loseHitpoints(playerOne, fireball)
+    print()
     print("Press Enter to End Turn")
     input()
 
@@ -37,8 +43,9 @@ def turnCounter():
             #dealDamage()
             #function does not return health correctly
             #works now  
+            playerOne.count += 1
             playerOneTurn(playerOne)
-
+            # playerOne.count + 1
             if playerOne.health < 0:
                 commanderAlive == False
                 break
