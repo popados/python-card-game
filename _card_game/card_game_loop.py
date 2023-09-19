@@ -60,7 +60,6 @@ def turnCounter():
             #works now  
             playerOne.count += 1
             playerOneTurn(playerOne)
-            playerTwo.count += 1
             playerTwoTurn(playerTwo)
             # playerOne.count + 1
             if (playerOne.health <= 0 | playerTwo.health <=0):
