@@ -1,5 +1,6 @@
 from card_object import card
 from commander_object import commander
+from cg_turn_count import turnCounter
 
 goblin = card("goblin", "monster", 3, 1)
 
@@ -8,6 +9,8 @@ fireball = card("fireball", "spell", int(2), int(1))
 playerOne = commander("player one", int(5), int(20), 0)
 
 playerTwo = commander("player two", int(5), int(20), 0)
+
+gameCount = turnCounter(0, 1, 20, playerTwo)
 
 
 
@@ -68,7 +71,8 @@ def turnCounter():
             # playerOne.health -= 1
             # print(playerOne.health)
 
-turnCounter()
+gameCount.printTurns()
+# turnCounter()
 print("end of program")
 
 #goblin.showCard()
