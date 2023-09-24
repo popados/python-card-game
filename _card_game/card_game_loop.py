@@ -10,7 +10,7 @@ playerOne = commander("player one", int(5), int(20), 0)
 
 playerTwo = commander("player two", int(5), int(20), 0)
 
-gameCount = turnCounter(0, 1, 20, playerTwo)
+gameCount = turnCounter(0, 1, 20, playerTwo, playerOne)
 
 
 
@@ -63,7 +63,11 @@ def turnCounter():
             #works now  
             playerOne.count += 1
             playerOneTurn(playerOne)
+            # gameCount.printTurns()
             playerTwoTurn(playerTwo)
+            selection = input("pick 1 to show turn.")
+            if selection == 1:
+                gameCount.printTurns()
             # playerOne.count + 1
             if (playerOne.health <= 0 | playerTwo.health <=0):
                 commanderAlive == False
@@ -71,8 +75,8 @@ def turnCounter():
             # playerOne.health -= 1
             # print(playerOne.health)
 
-gameCount.printTurns()
-# turnCounter()
+
+turnCounter()
 print("end of program")
 
 #goblin.showCard()

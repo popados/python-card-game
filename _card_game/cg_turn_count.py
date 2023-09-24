@@ -13,4 +13,5 @@ class turnCounter ():
         print("mana: " , self.mana)
         print("health: " , self.currentPlayer.health)
         print("player: " , self.nextPlayer.name)
+        print("next player: ", self.currentPlayer.name)
 
