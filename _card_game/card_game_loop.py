@@ -70,9 +70,16 @@ def turnCounter():
             if selection == "1":
                 gameCount.printTurns()
             # playerOne.count + 1
-            if (playerOne.health <= 0 | playerTwo.health <=0):
+            if (playerOne.health <= 0):
                 commanderAlive == False
+                print("player 2 wins")
                 break
+            if (playerTwo.health <=0):
+                commanderAlive == False
+                print("player 1 wins")
+                break
+            else:
+                continue
             # playerOne.health -= 1
             # print(playerOne.health)
 
