@@ -65,8 +65,9 @@ def turnCounter():
             playerOneTurn(playerOne)
             # gameCount.printTurns()
             playerTwoTurn(playerTwo)
-            selection = input("pick 1 to show turn.")
-            if selection == 1:
+            print("pick 1 to show turn.")
+            selection = input()
+            if selection == "1":
                 gameCount.printTurns()
             # playerOne.count + 1
             if (playerOne.health <= 0 | playerTwo.health <=0):
