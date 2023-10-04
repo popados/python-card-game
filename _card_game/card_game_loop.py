@@ -2,7 +2,7 @@ from card_object import card
 from commander_object import commander
 from cg_turn_count import turnCounter
 
-goblin = card("goblin", "monster", 3, 1)
+goblin = card("goblin", "monster", int(3), int(1))
 
 fireball = card("fireball", "spell", int(2), int(1))
 
@@ -60,21 +60,27 @@ def turnCounter():
         while commanderAlive == True:
             #dealDamage()
             #function does not return health correctly
-            #works now  
-            playerOne.count += 1
-            playerOneTurn(playerOne)
+            #works now
+            #   
+            gameCount.printTurns()
+            print()
             # gameCount.printTurns()
-            playerTwoTurn(playerTwo)
-            print("pick 1 to show turn.")
+
+            print("pick 1 for player 1. press 2 for player 2")
             selection = input()
             if selection == "1":
-                gameCount.printTurns()
+
+                playerOne.count += 1
+                playerOneTurn(playerOne)
             # playerOne.count + 1
+            if selection == "2":
+                playerTwo.count += 1
+                playerTwoTurn(playerTwo)
             if (playerOne.health <= 0):
                 commanderAlive == False
                 print("player 2 wins")
                 break
-            if (playerTwo.health <=0):
+            if (playerTwo.health <= 0):
                 commanderAlive == False
                 print("player 1 wins")
                 break
