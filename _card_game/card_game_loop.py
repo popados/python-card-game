@@ -6,13 +6,13 @@ goblin = card("goblin", "monster", int(3), int(1))
 
 fireball = card("fireball", "spell", int(2), int(1))
 
-playerOne = commander("player one", int(5), int(20), 0)
+playerOne = commander("player one", int(5), int(20), int(0))
 
-playerTwo = commander("player two", int(5), int(20), 0)
+playerTwo = commander("player two", int(5), int(20), int(0))
 
-gameCount = turnCounter(0, 1, 20, playerTwo, playerOne)
+gameCount = turnCounter(int(0), 1, 20, playerTwo, playerOne)
 
-
+#list of cards
 
 commanderAlive = True
 
@@ -62,6 +62,7 @@ def turnCounter():
             #function does not return health correctly
             #works now
             #   
+
             gameCount.printTurns()
             print()
             # gameCount.printTurns()
@@ -70,11 +71,15 @@ def turnCounter():
             selection = input()
             if selection == "1":
 
+                # turn_count = gameCount.turns
+                # turn_count +=1
                 playerOne.count += 1
+                gameCount.addTurnCount()
                 playerOneTurn(playerOne)
             # playerOne.count + 1
             if selection == "2":
                 playerTwo.count += 1
+                gameCount.addTurnCount()
                 playerTwoTurn(playerTwo)
             if (playerOne.health <= 0):
                 commanderAlive == False

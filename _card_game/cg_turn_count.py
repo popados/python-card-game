@@ -13,6 +13,10 @@ class turnCounter ():
         print("mana: " , self.mana)
         print("current health: " , self.currentPlayer.health)
         print("next player health: ", self.nextPlayer.health)
-        print("player: " , self.nextPlayer.name)
+        print("current player: " , self.nextPlayer.name)
         print("next player: ", self.currentPlayer.name)
 
+
+    def addTurnCount(self):
+        #print(self.turns)
+        self.turns += 1
