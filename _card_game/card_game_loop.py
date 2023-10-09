@@ -10,7 +10,12 @@ playerOne = commander("player one", int(5), int(20), int(0))
 
 playerTwo = commander("player two", int(5), int(20), int(0))
 
-gameCount = turnCounter(int(0), 1, 20, playerTwo, playerOne)
+gameCount = turnCounter(int(0), 1, playerTwo, playerOne)
+
+
+fieldList = []
+
+handList = [goblin.name, fireball.name]
 
 #list of cards
 
@@ -67,20 +72,24 @@ def turnCounter():
             print()
             # gameCount.printTurns()
 
-            print("pick 1 for player 1. press 2 for player 2")
+            print("pick 1 for player 1. press 2 for player 2. Press 8 for hand")
             selection = input()
             if selection == "1":
 
                 # turn_count = gameCount.turns
                 # turn_count +=1
-                playerOne.count += 1
-                gameCount.addTurnCount()
+                # playerOne.count += 1
+                gameCount.addTurnCount(playerOne)
+                gameCount.changePlayer(playerOne, playerTwo)
                 playerOneTurn(playerOne)
             # playerOne.count + 1
             if selection == "2":
-                playerTwo.count += 1
-                gameCount.addTurnCount()
+                # playerTwo.count += 1
+                gameCount.addTurnCount(playerTwo)
+                gameCount.changePlayer(playerOne, playerTwo)
                 playerTwoTurn(playerTwo)
+            if selection == "8":
+                print(handList)
             if (playerOne.health <= 0):
                 commanderAlive == False
                 print("player 2 wins")
@@ -113,6 +122,14 @@ print("end of program")
 #totalhealth = int(20)
 
 # Put into new object called Avatar or Commander
+# 
+
+# add cards
+# parse to json maybe?
+# hand class?
+# field class?
+# hand list?
+# field list?*
 # 
 
 
