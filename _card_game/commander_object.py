@@ -19,7 +19,7 @@ class commander ():
     #     hitpoints = hitpoints - 1
     #     print("same")
     #     print("damage to global hitpoints var:", hitpoints)
-    def loseHitpoints(self, player, damage) :
+    def dealDamage(self, player, damage) :
         # health = player.health
         health = player.health
         damage = damage.attack

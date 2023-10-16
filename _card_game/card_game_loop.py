@@ -40,7 +40,7 @@ def playerOneTurn(commander: playerOne):
 
     # # counter = count
     print("player one turn " + str(counter))
-    playerOne.loseHitpoints(playerOne, fireball)
+    playerOne.dealDamage(playerOne, fireball)
     print()
     print("Press Enter to End Turn")
     input()
@@ -53,7 +53,8 @@ def playerTwoTurn(commander: playerTwo):
 
     # # counter = count
     print("player two turn " + str(counter))
-    playerOne.loseHitpoints(playerTwo, fireball)
+    playerOne.dealDamage(playerTwo, fireball)
+    gameCount.changePlayer(playerOne, playerTwo)
     print()
     print("Press Enter to End Turn")
     input()

@@ -19,7 +19,7 @@ class card () :
         print("Attack is", self.attack)
         print("Health is", self.health)
 
-    def loseHitpoints(player, damage) :
+    def dealDamage(player, damage) :
         # health = player.health
         health = player.health
         damage = damage.attack

@@ -21,10 +21,11 @@ class turnCounter ():
         self.turns += 1
         currentPlayer.count += 1
 
+
+#This does something
     def changePlayer(self, currentPlayer, nextPlayer):
         self.currentPlayer = self.currentPlayer
         print(self.currentPlayer.health)
         self.nextPlayer = self.nextPlayer
         print(self.nextPlayer.health)
-        self.nextPlayer = self.currentPlayer
     
